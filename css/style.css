@@ -1,0 +1,154 @@
+/*Обнуление*/
+* {padding: 0;margin: 0;border: 0;}
+*, *:before,*:after{
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+:focus,:active{
+	outline: none;
+}
+
+a:focus,a:active {
+	outline: none;
+}
+
+nav, footer, header,aside {
+	display: block;
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 16px; 
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	color: #252B42;
+	font-weight: 500;
+	font-family: Montserrat;
+} 
+
+input, button, textarea {
+	font-family: inherit;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button{
+	cursor: pointer;
+}
+
+button::-moz-focus-inner{
+	padding: 0;
+	border: 0;
+}
+
+a, a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+ul, ol, li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-size: inherit;
+	font-weight: inherit;
+}
+/*Конец обнуления*/
+/*--------------------------------------------------------------*/
+.wrapper{
+	min-height: 100%;
+	overflow: hidden;
+}
+/*--------------------------------------------------------------*/
+._container{
+	max-width: 1046px;
+	padding: 0px 15px;
+	margin: 0px auto;
+	box-sizing: content-box;
+}
+
+/*-------------------------header-------------------------------*/
+.header { 
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 0;
+	z-index: 50;
+}
+.header__container { 
+	display: flex;
+	min-height: 104ps;
+	align-items: center;
+}
+
+@media (max-width: 479px){
+	.header__container{
+		min-height: 70px;
+	}
+}
+
+.header__logo { 
+	font-size: 24px;
+	font-weight: 700;
+	color: inherit;
+}
+.header__menu { 
+	margin: 0px 0px 0px 133px;
+}
+@media (max-width: 992px){
+	.header__menu { 
+		margin: 0px 0px 0px 80px;
+	}
+}
+@media (max-width: 767px){
+	.header__menu { 
+		margin: 0px 0px 0px 40px;
+	}
+}
+
+@media (max-width: 479px){
+	.header__menu { 
+		margin: 0px 0px 0px 20px;
+	}
+}
+
+.menu { 
+	padding: 0px 5px;
+}
+.menu__list { 
+	display: flex;
+	flex-wrap: wrap;
+}
+.menu__item { 
+	
+}
+.menu__item:not(:last-child){
+	margin: 0px 21px 0px 0px;
+}
+
+.menu__link { 
+	color: #737373;
+	line-height: 171%;
+	font-weight: 600;
+}
+
+@media (max-width: 479px){
+	.menu__link { 
+		font-size: 18px;
+	}
+}
