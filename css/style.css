@@ -974,14 +974,14 @@ h6 {
 	padding: 15px 15px;
 	flex: 0 1 16.6667%;
 }
-.footer__column:not(:last-child){
+.footer__column:last-child{
 	flex: 0 1 33.334%;
 }
 @media (max-width: 992px) {
 	.footer__column{
 		flex: 0 1 25%;
 	}
-	.footer__column:not(:last-child){
+	.footer__column:last-child{
 		flex: 0 1 100%;
 	}
 }
@@ -1053,7 +1053,7 @@ h6 {
 	align-items: center;
 }
 .footer__copy {
-	color: #7373;
+	color: #737373;
 	line-height: 171%;
 }
 .footer__social {
